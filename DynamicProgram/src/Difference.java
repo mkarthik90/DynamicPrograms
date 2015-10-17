@@ -6,7 +6,9 @@ public class Difference {
 
 	public static void main(String[] args) {
 
-		String[] arr = { "-11","1", "1", "2", "5", "4", "5", "8", "6", "421", "1" };
+		String a = "-11 1 1 2 5 4 5 8 6 421 1";
+		
+		String[] arr = a.split(" "); 
 		int[] values = new int[arr.length];
 		for (int i = 0; i < arr.length; i++) {
 			values[i] = Integer.parseInt(arr[i]);
@@ -16,7 +18,7 @@ public class Difference {
 		Arrays.sort(values);
 		int minDifference = 0;
 		int finalMinDifference = 0;
-		List listOfDifferenceValues = new ArrayList();
+		List<Integer> listOfDifferenceValues = new ArrayList<Integer>();
 		
 		for (int i = 1; i < values.length; i++) {
 			minDifference = values[i] - values[i - 1];

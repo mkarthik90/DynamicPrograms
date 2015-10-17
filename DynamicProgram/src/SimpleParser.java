@@ -40,7 +40,7 @@ public class SimpleParser {
 
 		SimpleParser parser = new SimpleParser();
 		System.out.println(parser.parser("{{}}"));
-		System.out.println(parser.parser(""));
+		System.out.println(parser.parser("{(})"));
 		System.out.println(parser.parser("{{{)))"));
 	}
 

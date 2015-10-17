@@ -18,6 +18,7 @@ public class BinarySearch {
 	}
 	
 	public static void main(String[] args) {
+		//Works on Sorted Array
 		int[]  a = {5,6,9,10,23,45,76,89,99};
 		BinarySearch bSearch = new BinarySearch();
 		int position = bSearch.search(0,a.length,a,6);
